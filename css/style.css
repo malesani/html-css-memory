@@ -1,0 +1,117 @@
+/* Generale */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightskyblue;
+  font-family: 'Nerko One', cursive;
+}
+
+/* titolo */
+header{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0.5%;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 2px black;
+}
+
+/* contenuto */
+main{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  }
+
+
+  /* caratteristiche delle carte */
+.carta{
+  display: inline-block;
+  margin: 1%;
+  width: 17%;
+  height: 200px;
+  box-shadow: 2px 2px lightgrey;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.dietro{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
+  z-index: 2;
+  position: absolute;
+}
+
+.avanti{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.avanti .image{
+  width: 100%;
+  height:85%;
+  margin-top: 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.avanti .testo{
+  font-size: 25px;
+  color:rgb(241, 74, 241);
+  text-shadow: 1px 1px black;
+  margin-bottom: 10px;
+}
+
+/* avanti immagini  */
+.avanti .image.bicycle {
+  background-image: url(../img/noun_Bicycle_3134821.png);
+}
+
+.avanti .image.air-balloon{
+  background-image: url(../img/noun_air_balloon_3134741.png);
+}
+
+.avanti .image.cruise{
+  background-image: url(../img/noun_Cruise_Ship_3134824.png);
+}
+
+.avanti .image.submarine{
+  background-image: url(../img/noun_Submarine_3134738.png);
+}
+
+.avanti .image.tractor{
+  background-image: url(../img/noun_Tractor_3134797.png);
+}
+
+.avanti .image.tram{
+  background-image: url(../img/noun_Tram_3134750.png);
+}
+
+/* footer */
+footer p{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+/* giro carte */
+.carta:hover .avanti{
+  z-index: 4;
+}
+
+.carta:hover .testo{
+  color: rgb(255, 187, 0);
+}
